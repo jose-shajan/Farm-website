@@ -489,19 +489,20 @@ ul.email li i {
         height: 100vh;
     }
 }.willom {
-    display: flex;
-    margin-top: -85px;
+    display: block;
+    text-align: center;
+    margin-top: -40px; /* slightly adjusted for better balance */
 }
 .willom h1 {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 65px;
+    line-height: 72px;
     color: #fff;
     font-weight: bold;
     margin: 0 auto;
     text-align: center;
     background: #6b7908;
     display: inline-block;
-    padding: 46px 46px;
+    padding: 30px 40px;
     border-radius: 30px;
 }
 .slider_main .carousel-indicators {
@@ -1092,3 +1093,18 @@ ul.social_icon li a i:hover {
 }
 
 .about_page .about, .service_page .services, .blog_page .news {padding-bottom: 90px;} 
+@media (max-width: 576px) {
+  .willom {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  @media (max-width: 576px) {
+  .willom h1 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 6px 16px;
+    border-radius: 8px;
+  }
+}

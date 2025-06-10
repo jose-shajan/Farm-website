@@ -48,11 +48,15 @@ File Name: responsive.css
     padding-right: 11px;
 }
  .willom h1 {
-    font-size: 24px;
-    line-height: 36px;
-    padding: 20px 15px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #6b7908;
+    display: inline-block;
     text-align: center;
-  }  
+    width: auto;
+  }
   .carousel-control-prev,
   .carousel-control-next {
     top: 50%;
@@ -168,11 +172,7 @@ File Name: responsive.css
     .logo {
         text-align: left;
     }
-    .willom h1 {
-        font-size: 27px;
-line-height: 40px;padding: 46px 21px;
-    }
-   .carousel-control-prev,
+       .carousel-control-prev,
   .carousel-control-next {
     top: 50%;
     transform: translateY(-50%);
