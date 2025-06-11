@@ -314,8 +314,10 @@ button {
 }
 
 .loader img {
-    width: 280px;
+  width: 100px !important;
+  height: 100px !important;
 }
+
 
 
 /*-- header --*/
@@ -1147,5 +1149,23 @@ ul.social_icon li a i:hover {
   body.main-layout .logo a span {
     color: white;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.7); /* soft shadow */
+  }
+}
+@media (max-width: 576px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .inner_page .logo a {
+    background-color: #6b7908 !important; /* green background */
+    color: white !important;              /* text color */
+    padding: 6px 12px !important;
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  .inner_page .logo a span {
+    color: white !important; /* if you're using <span> in the logo */
   }
 }
