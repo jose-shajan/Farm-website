@@ -1108,3 +1108,44 @@ ul.social_icon li a i:hover {
     border-radius: 8px;
   }
 }
+@media (max-width: 576px) {
+  .logo a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  #banner1 .carousel-control-prev,
+  #banner1 .carousel-control-next {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-toggler {
+    border: 2px solid #ffffff;
+  }
+
+  .nav-toggler span,
+  .nav-toggler span:before,
+  .nav-toggler span:after {
+    background-color: #ffffff;
+  }
+}
+@media (max-width: 576px) {
+  body.main-layout .logo a {
+    color: black;
+  }
+
+  body.main-layout .logo a span {
+    color: black;
+  }
+}
+@media (max-width: 576px) {
+  body.main-layout .logo a,
+  body.main-layout .logo a span {
+    color: white;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7); /* soft shadow */
+  }
+}
