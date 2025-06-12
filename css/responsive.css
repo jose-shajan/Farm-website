@@ -1,53 +1,322 @@
-/*--------------------------------------------------------------------- 
-File Name: responsive.css 
+/*---------------------------------------------------------------------
+File Name: responsive.css
 ---------------------------------------------------------------------*/
 
-@media (min-width: 1343px) and (max-width: 1500px) {
-  
-}
-
-@media (min-width: 1200px) and (max-width: 1342px) {
-   
-  
-}
-
+/* ------------------------------ 992px - 1199px ------------------------------ */
 @media (min-width: 992px) and (max-width: 1199px) {
-   
-    .site-navbar ul li {
-        padding-right: 37px;
-    }
-   
-   ul.recent li {font-size: 13px;}
-   .titlepage h2 {
-    font-size: 39px;
-    line-height: 39px;
-   }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-   
-    .site-navbar ul li {
-        padding-right: 7px;
-    }
-@media (max-width: 575px) {
- #banner1 {
-    width: 100%;
-    max-height: 300px;
-    overflow: hidden;
+  .site-navbar ul li {
+    padding-right: 37px;
   }
 
-  #banner1 .carousel-inner img {
+  ul.recent li {
+    font-size: 13px;
+  }
+
+  .titlepage h2 {
+    font-size: 39px;
+    line-height: 39px;
+  }
+}
+
+/* ------------------------------ 768px - 991px ------------------------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-navbar ul li {
+    padding-right: 7px;
+  }
+
+  .about .titlepage {
+    padding-bottom: 30px;
+    max-width: inherit;
+  }
+
+  .titlepage h2 {
+    font-size: 37px;
+    line-height: 37px;
+  }
+
+  .nostrud h3 {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .point h3 {
+    max-width: 159px;
+    height: 159px;
+  }
+
+  .services_box h3 {
+    font-size: 22px;
+    line-height: 21px;
+  }
+
+  .veget {
+    padding: 30px 15px;
+  }
+}
+
+/* ------------------------------ 576px - 767px ------------------------------ */
+@media (min-width: 576px) and (max-width: 767px) {
+  .willom h1 {
+    font-size: 27px;
+    line-height: 40px;
+    padding: 46px 21px;
+  }
+
+  #myCarousel .carousel-control-prev {
+    left: 1%;
+  }
+
+  .titlepage h2 {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  .about_img {
+    margin-top: 30px;
+  }
+
+  .about .titlepage {
+    max-width: inherit;
+  }
+
+  .d_none {
+    display: none !important;
+  }
+
+  .services_box {
+    max-width: 371px;
+    margin: 30px auto 50px;
+  }
+
+  .latest {
+    max-width: 370px;
+    margin: 0 auto 55px;
+  }
+
+  .flot_right {
+    float: inherit;
+  }
+
+  ul.social_icon {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* navbar css for mobile */
+  .nav-toggler {
+    display: block;
+    position: absolute;
+    right: 15px;
+    z-index: 99999;
+  }
+
+  .site-navbar {
+    min-height: 60px;
+  }
+
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    left: -15px;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+    z-index: 99999;
+    box-shadow: 0 0 10px rgb(192, 190, 182);
+  }
+
+  .site-navbar ul li {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .site-navbar ul li a {
+    padding: 0 25px;
+    line-height: 40px;
+  }
+
+  .site-navbar ul.open {
+    max-height: 100vh;
+    padding-bottom: 25px;
+    overflow: visible;
+  }
+}
+
+/* ------------------------------ Max 575px ------------------------------ */
+@media (max-width: 575px) {
+  .header-area {
+    padding-top: 0px;
+    margin-top: -10px;
+    height: 47px; /* reduce from 85px */
+    line-height: 60px; /* match it to center logo vertically */
+  }
+
+  .logo a {
+  font-size: 15px !important;
+}
+
+  .logo a span {
+    font-size: 15px !important;
+  }
+
+  .site-navbar ul li a {
+    font-size: 16px !important;
+    color: #222222;
+  }
+  .site-navbar ul li a.active {
+    color: #6b7908 !important; /* green highlight for active menu */
+    font-weight: bold;
+  }
+  .logo {
+    text-align: left;
+    padding-top: 0px;     /* reduce space above */
+    margin-top: -10px; 
+  }
+
+  #banner1 .carousel-control-prev,
+#banner1 .carousel-control-next {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Reduce arrow icon size */
+#banner1 .carousel-control-prev i,
+#banner1 .carousel-control-next i {
+  font-size: 16px !important;   /* ✅ Shrinks the icon */
+  line-height: 30px;
+  color: #000;
+}
+
+
+  #myCarousel .carousel-inner img {
     width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
   }
 
-   ul.email li {
+  #myCarousel {
+    max-height: 250px;
+    overflow: hidden;
+  }
 
-    padding-right: 11px;
+  .titlepage h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .about_img {
+    margin-top: 30px;
+  }
+  .about {
+  padding-top: 40px !important; /* or try 30px or 20px as needed */
 }
- .willom h1 {
+
+  .custom {
+    padding: 40px 12px;
+  }
+
+  .services_box {
+    max-width: 371px;
+    margin: 30px auto 50px;
+  }
+
+  .latest {
+    max-width: 317px;
+    margin: 30px auto;
+  }
+
+  .d_none {
+    display: none !important;
+  }
+
+  .flot_right {
+    float: inherit;
+  }
+
+  ul.social_icon {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Mobile navbar */
+  .navbar-area {
+    margin-top: -67px;
+  }
+
+  .nav-toggler {
+    display: block;
+    position: absolute;
+    right: 15px;
+    z-index: 99999;
+  }
+
+  .site-navbar {
+    min-height: 60px;
+  }
+
+  .site-navbar ul {
+  position: absolute;
+  top: 60px;
+  left: 20px; /* ✅ Shift right */
+  right: auto; /* ✅ Ensure right side isn't controlling width */
+  width: calc(100% - 40px); /* ✅ Prevent overflow */
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 99999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+  .site-navbar ul li {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .site-navbar ul li a {
+  padding: 10px 25px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #222222;
+}
+
+  .site-navbar ul.open {
+    max-height: 100vh;
+    padding-bottom: 25px;
+    overflow: visible;
+  }
+
+  /* Banner resizing */
+  #banner1 {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 0;
+  padding-bottom: 0;
+  }
+
+  #banner1 .carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .willom h1 {
     font-size: 20px;
     line-height: 24px;
     padding: 8px 12px;
@@ -55,212 +324,9 @@ File Name: responsive.css
     background-color: #6b7908;
     display: inline-block;
     text-align: center;
-    width: auto;
   }
-  .carousel-control-prev,
-  .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-  } 
-}
-   .about .titlepage {padding-bottom: 30px; max-width: inherit;}
-    .titlepage h2 {
-    font-size: 37px;
-    line-height: 37px;
-    }
-    .nostrud h3 {
-        font-size: 20px;
-        line-height: 21px;
-    }
-    .point h3 {
-    max-width: 159px;
-    height: 159px;
-}
-    .services_box h3 {
-    font-size: 22px;
-    line-height: 21px;
-   }
-   .veget {
-    padding: 30px 15px;
-}
 
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  
-    
-  .willom h1 {
-    font-size: 27px;
-    line-height: 40px;
-    padding: 46px 21px;
+  ul.email li {
+    padding-right: 11px;
   }
-    #myCarousel .carousel-control-prev {
-        left: 1%;
-    }
-   .titlepage h2 {
-    font-size: 46px;
-    line-height: 50px;}
-   
-   .about_img {
-    margin-top: 30px;
-}
-       .about .titlepage { max-width: inherit;}
-  
-    .d_none {
-        display: none !important;
-    }
-    .services_box {
-    max-width: 371px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-    .latest {
-        max-width: 370px;
-        margin: 0 auto;
-        margin-bottom: 55px;
-    }
-    .flot_right {float: inherit;}
-    ul.social_icon {
-    text-align: center;
-    margin-top: 20px;
-}
-    /* navbar css for mobile start */
-    .nav-toggler {
-        display: block;
-        position: absolute;
-        right: 15px;
-        z-index: 99999;
-    }
-    .site-navbar {
-        min-height: 60px;
-    }
-    .site-navbar ul {
-        position: absolute;
-        width: 100%;
-        left: -15px;
-        top: 60px;
-        flex-direction: column;
-        align-items: center;
-        background-color: #fff;
-        max-height: 0;
-        overflow: hidden;
-        transition: .3s;
-        z-index: 99999;
-        box-shadow: 0 0 10px rgb(192, 190, 182);
-    }
-    .site-navbar ul li {
-        width: 100%;
-        text-align: left;
-        padding-right: 0;
-    }
-   .site-navbar ul li a {
-    padding: 0px 25px 0px 25px;
-    line-height: 40px;
-}
-    .site-navbar ul.open {
-        max-height: 100vh;
-        padding-bottom: 25px;
-        overflow: visible;
-    }
-    /* navbar css for mobile end */
-}
-
-@media (max-width: 575px) {
-   
-    .logo {
-        text-align: left;
-    }
-       .carousel-control-prev,
-  .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-  }
-#myCarousel .carousel-inner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
-#myCarousel {
-    height: auto;
-    max-height: 250px;
-    overflow: hidden;
-}
-    .titlepage h2 {
-        font-size: 37px;
-        line-height: 45px;
-    }
-    .about_img {
-    margin-top: 30px;
-}
-       .about .titlepage { max-width: inherit;}
-       .custom {padding: 40px 12px;}
-       .services_box {
-    max-width: 371px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-    .latest {
-        max-width: 317px;
-        margin: 0 auto;
-       
-        margin-top: 30px;
-    }
-    .titlepage h2 {
-        line-height: 40px;
-        font-size: 28px;
-    }
-    .d_none {
-        display: none !important;
-    }
-       .flot_right {float: inherit;}
-    ul.social_icon {
-    text-align: center;
-    margin-top: 20px;
-}
-    /* navbar css for mobile start */
-    .navbar-area {
-        margin-top: -67px;
-    }
-    .nav-toggler {
-        display: block;
-        position: absolute;
-        right: 15px;
-        z-index: 99999;
-    }
-    .site-navbar {
-        min-height: 60px;
-    }
-    .site-navbar ul {
-        position: absolute;
-        width: 100%;
-        left: 0px;
-        top: 0px;
-        flex-direction: column;
-        align-items: center;
-        background-color: #fff;
-        max-height: 0;
-        overflow: hidden;
-        transition: .3s;
-        z-index: 99999;
-        box-shadow: 0 0 10px rgb(192, 190, 182);
-    }
-    .site-navbar ul li {
-        width: 100%;
-        text-align: left;
-        padding-right: 0;
-    }
-       .site-navbar ul li a {
-    padding: 0px 25px 0px 25px;
-    line-height: 40px;
-}
-    .site-navbar ul.open {
-        max-height: 100vh;
-        padding-bottom: 25px;
-        overflow: visible;
-    }
 }
