@@ -1,7 +1,6 @@
 /*---------------------------------------------------------------------
 File Name: responsive.css
 ---------------------------------------------------------------------*/
-
 /* ------------------------------ 992px - 1199px ------------------------------ */
 @media (min-width: 992px) and (max-width: 1199px) {
   .site-navbar ul li {
@@ -156,6 +155,49 @@ File Name: responsive.css
     line-height: 60px; /* match it to center logo vertically */
   }
 
+body.index_page .logo {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+
+
+
+
+body.index_page .footer .row:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+  body.service_page .footer .col-lg-3,
+  body.service_page .footer .col-md-6,
+  body.contact_page .footer .col-lg-3,
+  body.contact_page .footer .col-md-6 {
+    margin-bottom: 10px !important;
+    padding-bottom: 0 !important;
+  }
+
+  body.service_page .copyright,
+  body.contact_page .copyright {
+    margin-top: 0 !important;
+  }
+
+
+
+
+
+.footer .container {
+  padding-bottom: 0 !important;
+}
+
+body.contact_page .footer,
+body.service_page .footer {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+
+
   .logo a {
   font-size: 15px !important;
 }
@@ -233,10 +275,14 @@ File Name: responsive.css
     line-height: 25px;
     padding: 0 10px;           /* ✅ adds breathing room from edges */
   }
-
+  
 
   .custom {
     padding: 40px 12px;
+  }
+
+  .services {
+    padding-top: 30px !important; /* reduced from 90px */
   }
 
   .services_box {

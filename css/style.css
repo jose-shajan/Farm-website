@@ -129,20 +129,21 @@ Header
 
 
 
-.logo a {
-  color: black;
-  font-size: 28px !important; /* forcefully apply */
+.logo a,
+.inner_page .logo a {
+  text-decoration: none;
+}
+
+.logo a span,
+.inner_page .logo a span {
+  font-family: 'Rubik', sans-serif !important;
   font-weight: 700;
+  font-size: 20px;
+ color: #111;              /* white text for contrast */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
 }
 
-
-.logo a span {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px !important;
-  color: black;
-}
 
 
 .navbar-area {
@@ -512,7 +513,8 @@ Contact Section
 Footer 
 ---------------------------------------------------------------------*/
 .footer {
-  padding-top: 70px;
+  padding-top: 40px;         /* you can reduce this too */
+   padding-bottom: 0 !important;      /* 👈 add this line */
   background: #252525;
   text-align: center;
 }
@@ -637,7 +639,7 @@ ul.social_icon li a i:hover {
 
 .copyright {
   margin-top: 70px;
-  padding: 25px 0;
+  padding: 15px 0;
   background: #6b7908;
 }
 
@@ -645,8 +647,12 @@ ul.social_icon li a i:hover {
   font-size: 17px;
   line-height: 22px;
   color: #fff;
-  text-align: left;
+  text-align: center !important; /* force centering */
+  margin: 0 auto !important;     /* center block inside flex/grid */
+  width: 100%;                   /* ensures full container width */
 }
+
+
 
 .copyright a {
   color: #fff;
@@ -664,24 +670,6 @@ Inner Page Logo BG Color
   position: inherit;
 }
 
-.inner_page .logo a {
-  font-family: 'Montserrat', sans-serif !important; /* ✅ change to your desired font */
-  font-weight: 700;
-  font-size: 24px; /* adjust as needed */
-  color: black; /* or black depending on background */
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.inner_page .logo a span {
-  font-family: 'Montserrat', sans-serif !important; /* ✅ change to your desired font */
-  font-weight: 700;
-  font-size: 24px; /* adjust as needed */
-  color: black; /* or black depending on background */
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 /*--------------------------------------------------------------------- 
 Utility 
 ---------------------------------------------------------------------*/
@@ -696,9 +684,10 @@ Utility
 }
 
 body.about_page .footer {
-  padding-bottom: 10px !important;
-  padding-top: 80px !important;
+  padding-top: 20px !important;
+  padding-bottom: 0px !important;
 }
+
 
 
 
