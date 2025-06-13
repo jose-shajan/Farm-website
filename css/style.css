@@ -305,6 +305,7 @@ About Section
 .about {
   background: #fff;
   padding-top: 90px;
+  padding-bottom: 35px;
 }
 
 .about .titlepage {
@@ -348,7 +349,6 @@ About Section
   color: #6b7908;
   text-transform: uppercase;
 }
-
 
 /*--------------------------------------------------------------------- 
 Services Section 
@@ -602,12 +602,17 @@ ul.top_infomation li i {
 }
 
 ul.top_infomation li a {
-  color: #fff;
+  color: white !important;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-ul.top_infomation li a:hover {
-  color: #6b7908;
+
+ul.top_infomation li a:hover,
+ul.top_infomation li a:focus {
+  color: #6b7908 !important;
 }
+
 
 ul.social_icon {
   text-align: right;
@@ -655,18 +660,26 @@ ul.social_icon li a i:hover {
 Inner Page Logo BG Color 
 ---------------------------------------------------------------------*/
 .inner_page .header-area {
-  background: #dddddd7a;
+  background: #6b7908;
   position: inherit;
 }
 
 .inner_page .logo a {
-  background-color: transparent!important;
-  color: #000 !important;
-  padding: 0!important;
+  font-family: 'Montserrat', sans-serif !important; /* ✅ change to your desired font */
+  font-weight: 700;
+  font-size: 24px; /* adjust as needed */
+  color: black; /* or black depending on background */
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .inner_page .logo a span {
-  color: #000 !important;
+  font-family: 'Montserrat', sans-serif !important; /* ✅ change to your desired font */
+  font-weight: 700;
+  font-size: 24px; /* adjust as needed */
+  color: black; /* or black depending on background */
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------------- 
@@ -681,5 +694,11 @@ Utility
   text-align: center;
   margin-bottom: 20px;
 }
+
+body.about_page .footer {
+  padding-bottom: 10px !important;
+  padding-top: 80px !important;
+}
+
 
 

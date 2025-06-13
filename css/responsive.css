@@ -178,6 +178,13 @@ File Name: responsive.css
     margin-top: -10px; 
   }
 
+  .inner_page .header-area {
+    height: 58px;              /* ✅ increase from default (e.g., 47px) */
+    line-height: 70px;         /* ✅ vertically center content */
+    background-color: #6b7908; /* ensure green is visible */
+  }
+
+
   #banner1 .carousel-control-prev,
 #banner1 .carousel-control-next {
   width: 30px !important;
@@ -220,6 +227,13 @@ File Name: responsive.css
   .about {
   padding-top: 40px !important; /* or try 30px or 20px as needed */
 }
+  .about .titlepage p {
+    text-align: justify;       /* ✅ aligns paragraph neatly */
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 10px;           /* ✅ adds breathing room from edges */
+  }
+
 
   .custom {
     padding: 40px 12px;
