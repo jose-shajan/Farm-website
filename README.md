@@ -1,4 +1,6 @@
-# 🐖 Menacheril Pig Farm Website
+# ㅤㅤㅤㅤㅤㅤ  🐖Responsive and simple Pig Farm Website
+
+<img width="4269" height="2400" alt="Image" src="https://github.com/user-attachments/assets/9f4f2164-4a11-4139-b873-d0d4d0199f08" />
 
 A responsive and modern website for a Pig Farm, built to showcase  pig farming services, contact information, and offerings in a clean and user-friendly way.
 
@@ -40,10 +42,6 @@ A responsive and modern website for a Pig Farm, built to showcase  pig farming s
 - Font Awesome (for icons)
 - Google Fonts (Rubik)
 - [Formspree](https://formspree.io/) (form backend)
-
-## 📸 Screenshots
-
-
 
 ## 📬 Contact
 
