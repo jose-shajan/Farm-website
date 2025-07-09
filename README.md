@@ -1,4 +1,4 @@
-# ㅤㅤㅤ🐖Responsive & simple Pig Farm Website
+# 🐖Responsive Pig Farm Website
 
 <img width="4269" height="2400" alt="Image" src="https://github.com/user-attachments/assets/9f4f2164-4a11-4139-b873-d0d4d0199f08" />
 
